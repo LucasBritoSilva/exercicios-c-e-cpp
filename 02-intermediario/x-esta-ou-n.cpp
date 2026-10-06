@@ -22,17 +22,22 @@ bool decide(int a[], int n, int x) {
 
 int main() {
     int n, x;
+    cout << "Digite a quantidade de elementos do vetor: ";
     cin >> n;
+    cout << "Digite o numero que deseja procurar: ";
     cin >> x;
     int a[MAX];
+    cout << "Digite os " << n << " elementos do vetor:" << endl;
     for (int i = 0; i < n; i++) {
+        cout << "Elemento " << i + 1 << ": ";
         cin >> a[i];
     }
+    cout << endl;
     if (decide(a, n, x)) {
-        cout << "x esta no vetor" << endl;
+        cout << "O numero " << x << " esta no vetor." << endl;
     }
     else {
-        cout << "x nao esta no vetor" << endl;
+        cout << "O numero " << x << " nao esta no vetor." << endl;
     }
     return 0;
 }
