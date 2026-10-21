@@ -12,8 +12,16 @@ int pot(int x, int n){
     return som;
 }
 
+int potR(int x, int n){
+    if(n==0){
+        return 1;
+    }
+    return x * potR(x, n-1);
+}
+
 int main() {
     int x, n;
     cin >> x >> n;
-    cout << pot(x,n);
+    cout << pot(x,n) << endl;
+    cout << potR(x,n);
 }
