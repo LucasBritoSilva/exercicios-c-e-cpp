@@ -1,3 +1,17 @@
+/*
+ * Selection Sort (ordenação por seleção)
+ * ---------------------------------------------------------------------------
+ * Objetivo : ordenar um vetor de inteiros em ordem CRESCENTE. Em cada passo,
+ *            procura-se o MENOR elemento da parte ainda não ordenada e ele é
+ *            colocado na primeira posição dessa parte.
+ * Entrada  : nenhuma (o vetor de teste está fixo no código).
+ * Saída    : o vetor antes e depois da ordenação.
+ * Exemplo  : Antes:  5 2 8 1 4
+ *            Depois: 1 2 4 5 8
+ * Compilar : g++ -std=c++11 -Wall -Wextra selection-sort.cpp -o selection-sort
+ * Executar : ./selection-sort   (Windows: selection-sort.exe)
+ */
+
 #include <iostream>
 using namespace std;
 
