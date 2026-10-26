@@ -1,3 +1,17 @@
+/*
+ * Insertion Sort (ordenação por inserção)
+ * ---------------------------------------------------------------------------
+ * Objetivo : ordenar um vetor de inteiros em ordem CRESCENTE. Cada elemento
+ *            (a "chave") é inserido na posição correta dentro da parte do
+ *            vetor que já está ordenada, como ao organizar cartas na mão.
+ * Entrada  : nenhuma (o vetor de teste está fixo no código).
+ * Saída    : o vetor antes e depois da ordenação.
+ * Exemplo  : Antes:  5 2 8 1 4
+ *            Depois: 1 2 4 5 8
+ * Compilar : g++ -std=c++11 -Wall -Wextra insertion-sort.cpp -o insertion-sort
+ * Executar : ./insertion-sort   (Windows: insertion-sort.exe)
+ */
+
 #include <iostream>
 using namespace std;
 
