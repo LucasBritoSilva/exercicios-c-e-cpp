@@ -1,3 +1,18 @@
+/*
+ * Quick Sort (ordenação rápida)
+ * ---------------------------------------------------------------------------
+ * Objetivo : ordenar um vetor de inteiros em ordem CRESCENTE. Escolhe-se um
+ *            pivô (o último elemento), separam-se os elementos menores ou
+ *            iguais a ele dos maiores (particionamento) e cada lado é
+ *            ordenado recursivamente.
+ * Entrada  : nenhuma (o vetor de teste está fixo no código).
+ * Saída    : o vetor antes e depois da ordenação.
+ * Exemplo  : Antes:  5 2 8 1 4
+ *            Depois: 1 2 4 5 8
+ * Compilar : g++ -std=c++11 -Wall -Wextra quick-sort.cpp -o quick-sort
+ * Executar : ./quick-sort   (Windows: quick-sort.exe)
+ */
+
 #include <iostream>
 using namespace std;
 
