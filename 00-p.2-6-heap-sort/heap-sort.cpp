@@ -1,3 +1,17 @@
+/*
+ * Heap Sort (ordenação por heap)
+ * ---------------------------------------------------------------------------
+ * Objetivo : ordenar um vetor de inteiros em ordem CRESCENTE. Primeiro o vetor
+ *            vira um heap máximo (cada pai é maior que seus filhos); depois o
+ *            maior elemento (a raiz) é levado repetidamente para o fim do vetor.
+ * Entrada  : nenhuma (o vetor de teste está fixo no código).
+ * Saída    : o vetor antes e depois da ordenação.
+ * Exemplo  : Antes:  5 2 8 1 4
+ *            Depois: 1 2 4 5 8
+ * Compilar : g++ -std=c++11 -Wall -Wextra heap-sort.cpp -o heap-sort
+ * Executar : ./heap-sort   (Windows: heap-sort.exe)
+ */
+
 #include <iostream>
 using namespace std;
 
