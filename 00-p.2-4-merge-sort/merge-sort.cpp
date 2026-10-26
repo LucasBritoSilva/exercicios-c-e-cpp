@@ -1,3 +1,17 @@
+/*
+ * Merge Sort (ordenação por intercalação)
+ * ---------------------------------------------------------------------------
+ * Objetivo : ordenar um vetor de inteiros em ordem CRESCENTE. O vetor é
+ *            dividido ao meio, cada metade é ordenada recursivamente e as duas
+ *            metades ordenadas são intercaladas (merge) com um vetor auxiliar.
+ * Entrada  : nenhuma (o vetor de teste está fixo no código).
+ * Saída    : o vetor antes e depois da ordenação.
+ * Exemplo  : Antes:  5 2 8 1 4
+ *            Depois: 1 2 4 5 8
+ * Compilar : g++ -std=c++11 -Wall -Wextra merge-sort.cpp -o merge-sort
+ * Executar : ./merge-sort   (Windows: merge-sort.exe)
+ */
+
 #include <iostream>
 using namespace std;
 
@@ -59,9 +73,9 @@ void imprimir(int v[], int n) {
 }
 
 int main() {
-    int v[] = {5, 2, 8, 1, 4};
-    int aux[5];                               // vetor auxiliar do mesmo tamanho
-    int n = 5;
+    const int n = 5;
+    int v[n] = {5, 2, 8, 1, 4};
+    int aux[n];                               // vetor auxiliar do mesmo tamanho
 
     cout << "Antes:  ";
     imprimir(v, n);
